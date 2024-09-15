@@ -38,8 +38,8 @@ public class Course {
     @OneToMany(mappedBy = "course")
     private List<Grade> grades;
 
-    @ManyToMany(mappedBy = "courses")  // 'courses' refers to the List<Course> in Student class
-    private List<Student> students;  // Course's students
+    @ManyToMany(mappedBy = "courses")
+    private List<Student> students;
 
 
 }
